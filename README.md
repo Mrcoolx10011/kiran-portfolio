@@ -1,70 +1,250 @@
-# Getting Started with Create React App
+Kiran Mehta's Portfolio Website
+Overview
+This is a modern, responsive portfolio website built with React and Tailwind CSS, showcasing Kiran Mehta's skills, projects, and professional experience. The site features sophisticated animations, a clean UI, and a fully responsive design that works across all device sizes.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+View Live Demo | GitHub stars
 
-## Available Scripts
+Portfolio Screenshot
 
-In the project directory, you can run:
+Features
+Modern UI/UX Design: Clean, professional interface with smooth animations
 
-### `npm start`
+Fully Responsive: Works on mobile, tablet, and desktop devices
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Interactive Elements: Animated buttons, hover effects, and transitions
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Particle Background: Dynamic canvas-based particle system
 
-### `npm test`
+Section Navigation: Smooth scrolling to different sections
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Project Showcase: Highlighted projects with technology tags
 
-### `npm run build`
+Contact Form: Functional contact form with validation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Light/Dark Mode: Automatically adapts to system preferences
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Technologies Used
+Frontend: React 18
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Styling: Tailwind CSS
 
-### `npm run eject`
+Animations: Framer Motion
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Icons: Lucide React
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Build Tool: Vite
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Version Control: Git
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Project Structure
+src/
+├── components/
+│   ├── Navbar.jsx
+│   ├── Hero.jsx
+│   ├── About.jsx
+│   ├── Projects.jsx
+│   ├── Skills.jsx
+│   ├── Experience.jsx
+│   ├── Contact.jsx
+│   └── Footer.jsx
+├── App.jsx
+├── main.jsx
+├── index.css
+└── assets/
+    └── resume.pdf
+Getting Started
+Prerequisites
+Node.js (v16 or higher)
 
-## Learn More
+npm (v8 or higher)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Installation
+Clone the repository:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+bash
+git clone https://github.com/yourusername/portfolio.git
+cd portfolio
+Install dependencies:
 
-### Code Splitting
+bash
+npm install
+Start the development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+bash
+npm run dev
+Open your browser at:
 
-### Analyzing the Bundle Size
+http://localhost:5173
+Customization Guide
+Personal Information
+Update your personal details in the following files:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Hero.jsx:
 
-### Making a Progressive Web App
+jsx
+// Update name, title, and bio
+<h1>Hi, I'm <span className="text-blue-600">Your Name</span></h1>
+<h2>Your Job Title</h2>
+<p>Your professional bio...</p>
+Contact.jsx:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+jsx
+// Update contact information
+contactMethods = [
+  { title: "Email", details: "your@email.com" },
+  { title: "Phone", details: "+1234567890" },
+  { title: "Location", details: "Your City, Country" }
+]
+Projects
+Add your projects in Projects.jsx:
 
-### Advanced Configuration
+jsx
+const projects = [
+  {
+    title: "Project Name",
+    description: "Project description...",
+    technologies: ["React", "Node.js", "MongoDB"],
+    link: "#"
+  },
+  // Add more projects here
+];
+Skills
+Update your skills in Skills.jsx:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+jsx
+const skills = {
+  languages: ["JavaScript", "Python", "Java"],
+  frameworks: ["React", "Node.js", "Express"],
+  tools: ["Git", "Docker", "AWS"]
+};
+Profile Image
+Place your profile image in the public folder
 
-### Deployment
+Update the image path in Hero.jsx:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+jsx
+<motion.img 
+  src="/your-profile-image.jpg" 
+  alt="Your Name" 
+/>
+Resume
+Place your resume PDF in the public folder
 
-### `npm run build` fails to minify
+Update the resume link in Navbar.jsx and Footer.jsx:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+jsx
+<a href="/your-resume.pdf" download>
+Deployment
+Build for Production
+bash
+npm run build
+Deploy to Vercel
+Create a Vercel account at vercel.com
+
+Install Vercel CLI:
+
+bash
+npm install -g vercel
+Deploy:
+
+bash
+vercel
+Deploy to Netlify
+Create a Netlify account at netlify.com
+
+Drag and drop the dist folder to Netlify's dashboard
+
+Or connect your GitHub repository for continuous deployment
+
+Animations Customization
+The portfolio uses Framer Motion for animations. You can adjust animations in each component:
+
+Hero animations:
+
+jsx
+// Hero.jsx
+const floating = {
+  initial: { y: 0 },
+  animate: {
+    y: [0, -15, 0],
+    transition: {
+      duration: 4, // Adjust duration
+      repeat: Infinity,
+      ease: "easeInOut"
+    }
+  }
+};
+Stagger effects:
+
+jsx
+// App.jsx
+const container = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15, // Adjust stagger delay
+      delayChildren: 0.3
+    }
+  }
+};
+Adding New Sections
+To add a new section:
+
+Create a new component in components/
+
+Add it to App.jsx:
+
+jsx
+import NewSection from './components/NewSection';
+
+function App() {
+  return (
+    <div>
+      {/* ...existing components */}
+      <NewSection id="new-section" />
+    </div>
+  );
+}
+Add navigation to Navbar.jsx:
+
+jsx
+const navItems = [
+  // ...existing items
+  { id: 'new-section', label: 'New Section' }
+];
+Troubleshooting
+Common Issues
+Animations not working: Ensure you have installed Framer Motion
+
+bash
+npm install framer-motion
+Tailwind styles not applied: Make sure Tailwind is properly configured in tailwind.config.js
+
+Particles not showing: Check the console for canvas errors and ensure your browser supports Canvas API
+
+Performance Optimization
+Run production build:
+
+bash
+npm run build
+Optimize images before adding them to the project
+
+Use React.memo for components that don't need frequent re-renders
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Acknowledgements
+Framer Motion for animations
+
+Lucide Icons for beautiful icons
+
+Tailwind CSS for utility-first styling
+
+Vite for fast development environment
+
+Kiran Mehta
+Computer Science Engineer
+GitHub | LinkedIn | Portfolio
+

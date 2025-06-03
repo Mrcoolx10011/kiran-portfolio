@@ -5,7 +5,7 @@ This is a modern, responsive portfolio website built with React and Tailwind CSS
 
 **View Live Demo | GitHub stars**
 
-![Portfolio Screenshot](./path-to-screenshot.png) <!-- Replace with actual screenshot path -->
+(https://kiran-portfolio-ochre.vercel.app/)) <!-- Replace with actual screenshot path -->
 
 ---
 
@@ -77,11 +77,7 @@ Edit
 npm run dev
 Open your browser at:
 
-arduino
-Copy
-Edit
-http://localhost:5173
-
+---bash 
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 

@@ -59,14 +59,14 @@ const About = ({ id }) => {
                   <h3 className="font-semibold text-lg">Government Engineering College, Patan</h3>
                   <p className="text-gray-600">2022 – 2025</p>
                   <p>Bachelor of Engineering in Computer Science</p>
-                  <p className="mt-2"><span className="font-semibold">CGPA:</span> 7.98/10</p>
+                  <p className="mt-2"><span className="font-semibold">CGPA:</span> 8.39/10.0</p>
                 </div>
                 
                 <div>
-                  <h3 className="font-semibold text-lg">ITM Vocational University Valodara</h3>
+                  <h3 className="font-semibold text-lg">ITM Vocational University Vadodara</h3>
                   <p className="text-gray-600">2019 – 2022</p>
                   <p>Diploma in Computer Science</p>
-                  <p className="mt-2"><span className="font-semibold">CGPA:</span> 9.4/10</p>
+                  <p className="mt-2"><span className="font-semibold">CGPA:</span> 9.4/10.0</p>
                 </div>
               </CardContent>
             </Card>

@@ -53,7 +53,15 @@ const Projects = ({ id }) => {
       technologies: ["Next.js", "React", "Node.js", "MySQL"],
       image: "https://images.unsplash.com/photo-1586880244386-8b3e34c8382c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8RSUyMGNvbW1lcmNlfGVufDB8fDB8fHww", // Shopping image
       link: "#"
-    }
+    },
+    {
+  title: "Tobi – Smart To-Do App",
+  description: "A modern, gamified, and beautifully animated To-Do List web application built with React. It features task analytics, XP system, drag-and-drop, and multi-theme support to showcase advanced UI/UX and state management skills.",
+  technologies: ["React", "Tailwind CSS", "Framer Motion", "Lucide", "Chart.js", "LocalStorage"],
+  image: "https://plus.unsplash.com/premium_photo-1681487870238-4a2dfddc6bcb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dG8lMjBkbyUyMGFwcHxlbnwwfHwwfHx8MA%3D%3D", // You can replace this with a custom screenshot later
+  link: "#" // Add GitHub repo or live demo link here
+ }    
+
   ];
 
   const fadeIn = {

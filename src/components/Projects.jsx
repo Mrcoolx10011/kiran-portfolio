@@ -45,21 +45,21 @@ const Projects = ({ id }) => {
       description: "Clever Meta is a platform enabling users to mint, sell, and purchase NFTs seamlessly, providing artists with a simple interface to tokenize and trade their unique digital assets securely.",
       technologies: ["React.js", "Polygon", "Solidity", "MetaMask"],
       image: "https://images.unsplash.com/photo-1640231912426-0d5feab0b9f9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fE5GVHxlbnwwfHwwfHx8MA%3D%3D", // Blockchain image
-      link: "#"
+      link: "https://clever-meta-nft-minting.vercel.app/"
     },
     {
       title: "NGO E-commerce Platform",
       description: "A responsive e-commerce platform for an NGO featuring product listings, user authentication, and secure transactions.",
       technologies: ["Next.js", "React", "Node.js", "MySQL"],
       image: "https://images.unsplash.com/photo-1586880244386-8b3e34c8382c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8RSUyMGNvbW1lcmNlfGVufDB8fDB8fHww", // Shopping image
-      link: "#"
+      link: "https://ngo-fianl.vercel.app/"
     },
     {
   title: "Tobi – Smart To-Do App",
   description: "A modern, gamified, and beautifully animated To-Do List web application built with React. It features task analytics, XP system, drag-and-drop, and multi-theme support to showcase advanced UI/UX and state management skills.",
   technologies: ["React", "Tailwind CSS", "Framer Motion", "Lucide", "Chart.js", "LocalStorage"],
   image: "https://plus.unsplash.com/premium_photo-1681487870238-4a2dfddc6bcb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dG8lMjBkbyUyMGFwcHxlbnwwfHwwfHx8MA%3D%3D", // You can replace this with a custom screenshot later
-  link: "#" // Add GitHub repo or live demo link here
+  link: "https://advanced-todo-m8f7.vercel.app/" // Add GitHub repo or live demo link here
  }    
 
   ];

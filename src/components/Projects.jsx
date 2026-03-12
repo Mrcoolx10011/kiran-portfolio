@@ -34,34 +34,41 @@ const CardFooter = ({ children }) => (
 const Projects = ({ id }) => {
   const projects = [
     {
-      title: "Password Generator",
-      description: "A Password Generator application designed to create strong and secure passwords for users with Zero-knowledge security.",
-      technologies: ["Python", "Tkinter", "Random"],
-      image: "https://images.unsplash.com/photo-1584438784894-089d6a62b8fa?auto=format&fit=crop&w=800&q=80", // Cybersecurity image
-      link: "#"
+      title: "Artificial Intelligence (AI) Powered Automated Systems",
+      description: "A secure, webhook-based asynchronous communication system for bi-directional audio streams. Leverages prompt engineering and context management to automate the resolution of 80% of common user queries.",
+      technologies: ["Python", "Gemini AI", "Flask", "Ngrok"],
+      image: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?auto=format&fit=crop&w=800&q=80",
+      link: "#",
+      githubLink: "#",
+      badge: "GitHub",
     },
     {
-      title: "Clever Meta NFT Minting Platform",
-      description: "Clever Meta is a platform enabling users to mint, sell, and purchase NFTs seamlessly, providing artists with a simple interface to tokenize and trade their unique digital assets securely.",
-      technologies: ["React.js", "Polygon", "Solidity", "MetaMask"],
-      image: "https://images.unsplash.com/photo-1640231912426-0d5feab0b9f9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fE5GVHxlbnwwfHwwfHx8MA%3D%3D", // Blockchain image
-      link: "https://clever-meta-nft-minting.vercel.app/"
+      title: "CleverMeta Marketplace",
+      description: "A full-stack platform with secure transaction handling and an API-driven architecture. Refactored backend logic to reduce operational costs by 70%, significantly improving system cost-efficiency.",
+      technologies: ["React", "Node.js", "Polygon (Web3)"],
+      image: "https://images.unsplash.com/photo-1640231912426-0d5feab0b9f9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fE5GVHxlbnwwfHwwfHx8MA%3D%3D",
+      link: "https://clever-meta-nft-minting.vercel.app/",
+      githubLink: "#",
+      badge: "Live Demo",
     },
     {
       title: "NGO E-commerce Platform",
-      description: "A responsive e-commerce platform for an NGO featuring product listings, user authentication, and secure transactions.",
+      description: "A responsive e-commerce platform for an NGO featuring product listings, user authentication, and secure transactions. Built with Next.js, React, Node.js, and MySQL.",
       technologies: ["Next.js", "React", "Node.js", "MySQL"],
-      image: "https://images.unsplash.com/photo-1586880244386-8b3e34c8382c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8RSUyMGNvbW1lcmNlfGVufDB8fDB8fHww", // Shopping image
-      link: "https://ngo-fianl.vercel.app/"
+      image: "https://images.unsplash.com/photo-1586880244386-8b3e34c8382c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8RSUyMGNvbW1lcmNlfGVufDB8fDB8fHww",
+      link: "https://ngo-fianl.vercel.app/",
+      githubLink: "#",
+      badge: "Live Demo",
     },
     {
-  title: "Tobi – Smart To-Do App",
-  description: "A modern, gamified, and beautifully animated To-Do List web application built with React. It features task analytics, XP system, drag-and-drop, and multi-theme support to showcase advanced UI/UX and state management skills.",
-  technologies: ["React", "Tailwind CSS", "Framer Motion", "Lucide", "Chart.js", "LocalStorage"],
-  image: "https://plus.unsplash.com/premium_photo-1681487870238-4a2dfddc6bcb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dG8lMjBkbyUyMGFwcHxlbnwwfHwwfHx8MA%3D%3D", // You can replace this with a custom screenshot later
-  link: "https://advanced-todo-m8f7.vercel.app/" // Add GitHub repo or live demo link here
- }    
-
+      title: "Tobi – Smart To-Do App",
+      description: "A modern, gamified, and beautifully animated To-Do List web application built with React. Features task analytics, XP system, drag-and-drop, and multi-theme support.",
+      technologies: ["React", "Tailwind CSS", "Framer Motion", "Lucide", "Chart.js"],
+      image: "https://plus.unsplash.com/premium_photo-1681487870238-4a2dfddc6bcb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dG8lMjBkbyUyMGFwcHxlbnwwfHwwfHx8MA%3D%3D",
+      link: "https://advanced-todo-m8f7.vercel.app/",
+      githubLink: "#",
+      badge: "Live Demo",
+    },
   ];
 
   const fadeIn = {
@@ -98,9 +105,14 @@ const Projects = ({ id }) => {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 z-10"></div>
+                  {project.badge && (
+                    <span className="absolute top-3 right-3 z-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-xs font-semibold px-2.5 py-1 rounded-full shadow">
+                      {project.badge}
+                    </span>
+                  )}
                 </div>
                 <CardHeader>
                   <CardTitle>{project.title}</CardTitle>
@@ -120,20 +132,26 @@ const Projects = ({ id }) => {
                 </CardContent>
                 <CardFooter>
                   <div className="flex space-x-3">
-                    <motion.button 
+                    <motion.a
+                      href={project.githubLink || "#"}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="px-4 py-2 border border-blue-600 text-blue-600 hover:bg-blue-50 rounded-md flex items-center"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                     >
                       <Github className="h-4 w-4 mr-2" /> Code
-                    </motion.button>
-                    <motion.button 
+                    </motion.a>
+                    <motion.a
+                      href={project.link || "#"}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-md flex items-center"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                     >
                       <ExternalLink className="h-4 w-4 mr-2" /> Demo
-                    </motion.button>
+                    </motion.a>
                   </div>
                 </CardFooter>
               </Card>
